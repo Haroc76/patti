@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Patti</title>
+        <meta name="description" content="Description">
+        <link type="text/css" rel="stylesheet" href="reset.css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header style="display: flex; justify-content: space-between;">
+            <div class="nav-logo">
+                <a href="#about"><img src="images/patti-logo.png" alt="logo patti"></a>
+            </div>
+            <div>
+                <input type="checkbox" id="check" name="check">
+                <label for="check">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34px" height="27px" viewBox="0 0 34 27" enable-background="new 0 0 34 27" xml:space="preserve">
+                        <rect fill="#000" width="34" height="4"/>
+                        <rect y="11" fill="#000" width="34" height="4"/>
+                        <rect y="23" fill="#000" width="34" height="4"/>
+                        </svg>
+                        <span class="nav-close">×</span>
+                        <nav class="nav uppercase">
+                            <ul>
+                                <li><a class="nav-link" href="">Hello</a></li>
+                                <li><a class="nav-link" href="">About</a></li>
+                                <li><a class="nav-link" href="">Work</a></li>
+                                <li><a class="nav-link" href="">Services</a></li>
+                                <li><a class="nav-link" href="">Journal</a></li>
+                                <li><a class="nav-link" href="">Extra</a></li>
+                                <ul class="nav-sublist_display" style="display: none;">
+                                    <li><a>Shop</a></li>
+                                    <li><a>Elements</a></li>
+                                    <li><a>Porfolio item 1</a></li>
+                                    <li><a>Porfolio item 2</a></li>
+                                    <li><a>Porfolio item 3</a></li>
+                                    <li><a>Porfolio item 4</a></li>
+                                    <li><a>Porfolio item 5</a></li>
+                                    <li><a>Blog - masonry 3 cols</a></li>
+                                    <li><a>Blog - masonry 2 cols</a></li>
+                                    <li><a>Blog - masonry 2 cols + sidebar</a></li>
+                                    <li><a>Blog - regular layout</a></li>
+                                </ul>
+                                <li><a class="nav-link" href="">Contact</a></li>
+                            </ul>
+                        </nav>
+                </label>
+                </div> 
+        </header>
+        <main>
+           <section class="hero">
+                <div class="hero-image">
+                    <div class="hero-text">
+                        <h1>We are patti studio<br/>
+                        ............... Since 2008 ...............<br/>
+                        <span>Serving web design</span></h1>
+                    </div>
+                </div>
+                <div style="display: none">
+                    <img src="images/road.jpg" alt="road">
+                    <div>
+                        <h1>Its all starts with a vision</h1>
+                    </div>
+                </div>
+                <div style="display: none">
+                    <img  src="images/city.jpg" alt="city">
+                    <div>
+                        <h2>We just love what we do</h2>
+                    </div>
+                    
+                </div>
+            </section>
+            <section id="about" class="gutter">
+                    <div class="box">
+                        <div class="about-card box-one">
+                            <h3 class="about-card_heading">We care.</h3>
+                            <p class="about-card_heading">
+                                Sed ut perspiciatis unde omnis iste natus error sit 
+                                voluptatem accusantium doloremque laudantium,
+                                totam rem aperiam, eaque ipsa quae ab illo inventore.
+                            </p>
+                        </div>
+                        <div class="about-card box-two">
+                            <h3 class="about-card_heading">We deliver.</h3>
+                            <p class="about-card_text">
+                                Sed ut perspiciatis unde omnis iste natus error sit 
+                               voluptatem accusantium doloremque laudantium,
+                               totam rem aperiam, eaque ipsa quae ab illo inventore.
+                            </p>
+                        </div>
+                        <div class="about-card box-tree">
+                            <h3 class="about-card_heading">We're creative.</h3>
+                            <p class="about-card_text">
+                                Sed ut perspiciatis unde omnis iste natus error sit 
+                                voluptatem accusantium doloremque laudantium,
+                                totam rem aperiam, eaque ipsa quae ab illo inventore.
+                            </p>
+                        </div>
+                    </div>
+                    <hr class="hr">
+                    <div class="box about-progress">
+                        <div class="about-card box-four">
+                            <h3 class="about-card_heading">About us</h3>
+                            <p class="about-card_text">Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                elit. Maecenas diam sapien, auctor sed blandit 
+                                nec, adipiscing eget elit. Duis tempor elementum 
+                                quam consequat condimentum. Cum sociis natoque 
+                                penatibus et magnis dis parturient montes, 
+                                nascetur ridiculus mus.Praesent volutpat nisl
+                                fringilla felis sodales elementum. Ut commodo
+                                arcu massa.</p>
+                            <p class="about-card_text">Cum sociis natoque penatibus et magnis dis 
+                                parturient montes, nascetur ridiculus mus…</p>
+                        </div>
+                        <div class="about-card box-five">
+                            <label class="about-progress_text">Html5</label>
+                            <progress class="about-progress_color" max="100" value="65">65%</progress>
+                            <label class="about-progress_text">Illustrator</label>
+                            <progress class="about-progress_color" max="100" value="45">45%</progress>
+                            <label class="about-progress_text">Photoshop</label>
+                            <progress class="about-progress_color" max="100" value="95">95%</progress>
+                        </div>
+                    </div>
+            </section>
+            <section id="team">
+                <h2 class="heading-divider_color">Our team</h2>
+                <p class="align">Quis autem vel eum iure reprehenderit qui in ea voluptate 
+                    velit esse</p>
+                <div class="panels-team gutter">
+                    <div class="card-team align">
+                        <img class="card-team_img" src="images/john-doe.jpg" alt="John Doe">
+                        <h3 class="card-team_name">John doe</h3>
+                        <h4 class="card-team_job">Graphic Designer</h4>
+                        <p class="card-team_text">Morbi leo risus, porta ac consectetur ac, vestibulum at 
+                            eros. Maecenas faucibus mollis interdum.</p>
+                        <div>
+                            <img 
+                             src="images/SVG/facebook-f.svg" alt="facebook">
+                            <img src="images/SVG/twitter.svg" alt="twitter">
+                            <img src="images/SVG/google-plus-g.svg" alt="google plus">
+                            <img src="images/SVG/linkedin-in.svg" alt="linkedin">
+                        </div>
+                    </div>
+                    <div class="card-team align">
+                        <img class="card-team_img" src="images/andrew-clark.jpg" alt="Andrew Clark">
+                        <h3 class="card-team_name">Andrew Clark</h3>
+                        <h4 class="card-team_job">Web Developer</h4>
+                        <p class="card-team_text">Lorem ipsum dolor sit amet, consectetur adipisicing 
+                            elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        <div>
+                            <img src="images/SVG/facebook-f.svg" alt="facebook">
+                            <img class="team-icon_size" src="images/SVG/twitter.svg" alt="twitter">
+                        </div>
+                    </div>
+                    <div class="card-team align">
+                        <img class="card-team_img" src="images/patrick-smith.jpg" alt="Patrick Smith">
+                        <h3 class="card-team_name">Patrick Smith</h3>
+                        <h4 class="card-team_job">Marketing Manager</h4>
+                        <p class="card-team_text">At vero eos et accusamus et iusto odio dignissimos 
+                            ducimus qui blanditiis praesentium voluptatum.</p>
+                        <div>
+                            <img src="images/SVG/facebook-f.svg" alt="facebook">
+                            <img src="images/SVG/twitter.svg" alt="twitter">
+                        </div>
+                    </div>
+                </div>
+            </section>
+                <p class="quote align bold layout-padding"><q cite="https://www.goodreads.com/quotes/19905-perfection-is-achieved-not-when-there-is-nothing-more-to"> Perfection
+                is achieved, not when there is nothing more to add, but 
+                when there is nothing left to take away. </q><br/><br/>
+                - Antoine de saint-exupery</p>
+            <section id="ourwork">
+                <h2 class="heading-divider_color">Our Work</h2>
+                <div class="nav-work align">
+                    <a>All</a>
+                    <a>Branding</a>
+                    <a>Marketing</a>
+                    <a>Media</a>
+                    <a>Photography</a>
+                    <a>Print</a>
+                    <a>Web Design</a>
+                </div>
+                <div class="grid panels">
+                    <div class="one"><img src="images/portfolio/old-car.jpg" alt="old car"></div>
+                    <div class="two"><img src="images/portfolio/girl-flower.jpg" alt="girl flower"></div>
+                    <div class="tree"><img src="images/portfolio/macbook.jpg" alt="macbook"></div>
+                    <div class="four"><img src="images/portfolio/lighthouse.jpg" alt="lighthouse"></div>
+                    <div class="five"><img src="images/portfolio/old-bike.jpg" alt="old bike"></div>
+                    <div class="six"><img src="images/portfolio/pedestrian-parking.jpg" alt="pedestrian"></div>
+                    <div class="seven"><img src="images/portfolio/guitar.jpg" alt="guitar"></div>
+                    <div class="height"><img src="images/portfolio/focus.jpg" alt="focus camera"></div>
+                    <div class="nine"><img src="images/portfolio/field.jpg" alt="field"></div>
+                    <div class="ten"><img src="images/portfolio/clock.jpg" alt="clock"></div>
+                </div>
+            </section>
+            <section id="somefunfacts" class="align bold gutter">
+                <h2 class="heading-divider_color">Some fun facts</h2>
+                <div class="somefunfacts-panels">
+                    <div class="somefunfacts-blocks">
+                        <p class="somefunfacts-number-size">134</p>
+                        <p class="somefunfacts-text-size">Cups of coffee</p>
+                    </div>
+                    <div class="somefunfacts-blocks">
+                        <p class="somefunfacts-number-size">75</p>
+                        <p class="somefunfacts-text-size">Projects delivered</p>
+                    </div>
+                    <div class="somefunfacts-blocks">
+                        <p class="somefunfacts-number-size">28</p>
+                        <p class="somefunfacts-text-size">Satisfied clients</p>
+                    </div>
+                    <div class="somefunfacts-blocks">
+                        <p class="somefunfacts-number-size">12</p>
+                        <p class="somefunfacts-text-size">Winning Awards</p>
+                    </div>
+                </div>
+            </section>
+            <section id="services" class="align layout-padding">
+                <h2 class="heading-divider_color white">Services</h2>
+                <div class="services-panels">
+                    <div class="services-card">
+                        <img class="services-img_size" 
+                             src="images/SVG/microphone.svg" alt="microphone">
+                        <p>Social media</p>
+                    </div>
+                    <div class="services-card">
+                        <img class="services-img_size" 
+                             src="images/SVG/cogs.svg" alt="cogs">
+                        <p>Clean code</p>
+                    </div>
+                    <div class="services-card">
+                        <img class="services-img_size" 
+                             src="images/SVG/camera.svg" alt="camera">
+                        <p>Photography</p>
+                    </div>
+                    <div class="services-card">
+                        <img class="services-img_size" 
+                             src="images/SVG/edit.svg" alt="edit">
+                        <p>Copywriting</p>
+                    </div>
+                    <div class="services-card">
+                        <img class="services-img_size" 
+                             src="images/SVG/clock.svg" alt="clock">
+                        <p>Fast delivery</p>
+                    </div>
+                </div>
+            </section>
+            <section id="blog" class="gutter">
+                <h2 class="heading-divider_color">From the blog</h2>
+                <div class="blog">
+                    <div class="blog-card">
+                        <img src="images/van.jpg" alt="van" class="blog-img_size">
+                        <h3>Perfect sunday morning ride</h3>
+                        <img src="images/SVG/pen.svg" alt="pen">
+                        <time datetime="2014-03-01">March 1, 2014</time>
+                        <p>Ut enim ad minima veniam, quis nostrum 
+                            exercitationem ullam corporis suscipit laboriosam,
+                            nisi ut aliquid ex ea commodi consequatur.</p>
+                        <p class="small_text-color bold uppercase right">
+                            <a class="hover">Read more</a></p>
+                            <hr>
+                    </div>
+                    <div class="blog-card">
+                        <img src="images/coffee-and-macaron.jpg" 
+                             alt="coffee and macaron" class="blog-img_size">
+                        <h3>How videos can help promote your business</h3>
+                        <img src="images/SVG/pen.svg" alt="pen">
+                        <time datetime="2014-01-14">January 28, 2014</time>
+                        <p>Donec id ligula ut tellus ultricies ornare quis
+                            vel nunc. In id purus vel magna porta laoreet at
+                            a dolor. Aliquam aliquam mollis feugiat.</p>
+                            <p class="small_text-color bold uppercase right">
+                                <a class="hover">Read more</a></p>
+                                <hr>
+                    </div>
+                    <div class="blog-card">
+                        <img src="images/work-computer.jpg" alt="work computer" class="blog-img_size">
+                        <h3>Working like a workaholic</h3>
+                        <img src="images/SVG/pen.svg" alt="pen">
+                        <time datetime="2014-02-28">February 28, 2014</time>
+                        <p>Nullam adipiscing sapien ut mi elementum sit amet 
+                            dictum magna luctus. Donec id ligula ut tellus 
+                            ultricies ornare quis vel nunc lorem ipsum dolor
+                            sit amet.</p>
+                            <p class="small_text-color bold uppercase right">
+                                <a class="hover">Read more</a></p>
+                                <hr>
+                    </div>
+                    <div class="blog-card">
+                        <blockquote>Logic will get you from A to B. Imagination 
+                            will take you just about everywhere.</br>
+                            <time date="2013-12-10">DECEMBER 10, 2013</time> -ALBERT EINSTEIN
+                        </blockquote>
+                        <h3>WRITE FOR TUTSPLUS.COM – PASSIONATE PEOPLE REQUIRED!</h3>
+                        <img src="images/SVG/pen.svg" alt="pen">
+                        <time datetime="2013-07-24">July 24, 2013</time>
+                        <hr>
+                    </div>
+                    <div class="blog-card">
+                        <img src="images/rail-frog.jpg" alt="rail frog" class="blog-img_size">
+                        <h3>Case study : envato website redesign</h3>
+                        <img src="images/SVG/pen.svg" alt="pen">
+                        <time datetime="2014-02-14">February 14, 2014</time>
+                        <p>Nunc blandit tincidunt consequat. Duis diam metus,
+                            suscipit in pulvinar eget, egestas id arcu. Duis
+                            a enim vel mauris ultrices. Nullam aliquet velit
+                            ac velit tempus in semper neque auctor.</p>
+                            <p class="small_text-color bold uppercase right">
+                                <a class="hover">Read more</a></p>
+                                <hr>
+                    </div>
+                    <div class="blog-card">
+                        <img src="images/bike.jpg" alt="bike" class="blog-img_size">
+                        <h3>Role of size in logo design</h3>
+                        <img src="images/SVG/pen.svg" alt="pen">
+                        <time datetime="2014-03-01">January 7, 2014</time>
+                        <p>Lorem Ipsum is simply dummy text of the printing
+                            and typesetting industry.</p>
+                            <p class="small_text-color bold uppercase right">
+                                <a class="hover">Read more</a></p>
+                                <hr>
+                    </div>
+                </div>
+            </section>
+            <section id="social" class="align layout-padding">
+                <h2 class="heading-divider_color white">Twitter feed</h2>
+                <div>
+                    <p class="white">1 day ago</p>
+                    <p class="white">Now,  what if you're not using a page builder for your
+                        website ? Read the full article : How to Add Blog
+                        Posts to Pag... <a href="https://t.co/rGSiYzbR9e"></a></p>
+                    <div class="line">
+                        <div>
+                            <img src="images/SVG/reply.svg" alt="reply">
+                            <p class="white">Reply</p>
+                        </div>
+                        <div>
+                            <img src="images/SVG/retweet.svg" alt="retweet">
+                            <p class="white">Retweet</p>
+                        </div>
+                        <div>
+                            <img src="images/SVG/star.svg" alt="favory">
+                            <p class="white">Favorite</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: none">
+                    <p>1 day ago</p>
+                    <p>Now,  what if you're not using a page builder for your
+                        website ? Read the full article : How to Add Blog
+                        Posts to Pag... <a href="https://t.co/rGSiYzbR9e"></a></p>
+                    <div>
+                        <div>
+                            <img src="images/SVG/reply.svg" alt="reply">
+                            <p>Reply</p>
+                        </div>
+                        <div>
+                            <img src="images/SVG/retweet.svg" alt="retweet">
+                            <p>Retweet</p>
+                        </div>
+                        <div>
+                            <img src="images/SVG/star.svg" alt="favory">
+                            <p>Favorite</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: none;">
+                    <p>1 day ago</p>
+                    <p>Now,  what if you're not using a page builder for your
+                        website ? Read the full article : How to Add Blog Posts
+                        to Pag... <a href="https://t.co/rGSiYzbR9e"></a></p>
+                    <div>
+                        <div>
+                            <img src="images/SVG/reply.svg" alt="reply">
+                            <p>Reply</p>
+                        </div>
+                        <div>
+                            <img src="images/SVG/retweet.svg" alt="retweet">
+                            <p>Retweet</p>
+                        </div>
+                        <div>
+                            <img src="images/SVG/star.svg" alt="favory">
+                            <p>Favorite</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="testimonials align layout-padding">
+                <h2>Testimonials</h2>
+                <p>"The work they made impressed me on multiple levels. I have
+                    been very happy about the whole process and they have done
+                    a great job. They was fast to deliver new ideas and always
+                    helpful with our questions!”</p>
+                <p>
+                    <span class="small_text-color">Richard Brennan</span><em>,</em> 
+                    <span>
+                        Linda Marketing Team
+                    </span>
+                </p>
+            </section>
+            <section class="partners align layout-padding">
+                <h2 class="white">Partners</h2>
+                <div class="partners-panels">
+                    <img src="images/digitalside.png" alt="digitalside">
+                    <img src="images/videosms.png" alt="videosms">
+                    <img src="images/spectrum.png" alt="sepctrum">
+                    <img src="images/brilliant.png" alt="brilliant">
+                    <img src="images/homeenergy.png" alt="home energy">
+                    <img src="images/diagblock.png" alt="diagblock">
+                </div>
+            </section>
+            <section class="contact layout-padding">
+                <h2 class="heading-divider_color white">Come and work with us</h2>
+                <div class="panels">
+                    <ul class="contact-list_style">
+                        <li>Amphitheatre Parkway, Mountain View, CA 94043</li>
+                        <li><a>+321 123 456 7</a></li>
+                        <li><a class="small_text-color" href="johndoe@ipsum.com">johndoe@ipsum.com</a></li>
+                        <li><a class="small_text-color" href="www.website.com">www.website.com</a></li>
+                    </ul>
+                    <form>
+                        <input class="contact-form_style" placeholder="Name">
+                        <input class="contact-form_style" placeholder="Email">
+                        <textarea class="contact-form_style" placeholder="Message"></textarea>
+                        <div class="contact-button">
+                            <button class="contact-button_style">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="align">
+            <h4>Copyright 2016 - Patti.All Rights Reserved</h4>
+            <img src="images/SVG/wifi.svg" alt="logo wifi">
+            <img src="images/SVG/facebook-f.svg" alt="facebook">
+            <img src="images/SVG/twitter.svg" alt="twitter">
+        </footer>
+    </body>
+</html>

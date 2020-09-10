@@ -1,0 +1,652 @@
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Global...............Globally-available variables and config.
+ *
+ * TOOLS
+ * Mixins...............Useful mixins.
+ *
+ * GENERIC
+ * reset.css........A level playing field.
+ * Box-sizing...........Better default `box-sizing`.
+ *
+ * BASE
+ * Headings.............H1–H6 styles.
+ *
+ * OBJECTS
+ * Wrappers.............Wrapping and constraining elements.
+ *
+ * COMPONENTS
+ * Page-head............The main page header.
+ * Page-foot............The main page footer.
+ * Buttons..............Button elements.
+ *
+ * TRUMPS
+ * Text.................Text helpers.
+ */
+
+
+/*------------------------------------*\
+  #Global
+\*------------------------------------*/
+
+img{
+    max-width: 100%;
+    filter: grayscale(1);
+    height: auto;
+}
+img:hover{
+    filter: grayscale(0);
+    transition: 0.5s;
+}
+
+/* color */
+
+:root{
+    --colorOrange : #FE7E17;
+    --colorLogo : #848484;
+    --colorH2 : #444444;
+    --colorH3 : #686868;
+    --colorBtn : #323232;
+    --colorWhite : #fff;
+}
+[class*= "white"]{
+    color: var(--colorWhite);
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.gutter{
+    margin: 5rem 1rem;
+}
+.hover:hover{
+    transition: 0.4s;
+    color: var(--colorBtn);
+}
+
+/*------------------------------------*\
+  #Mixins
+\*------------------------------------*/
+
+
+
+
+
+/*------------------------------------*\
+  #Box-sizing
+\*------------------------------------*/
+
+/*----section nav----*/
+
+
+header {
+    position: fixed;
+    max-width: 100%;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+}
+
+input ~ label>nav{
+    display: none;
+  }
+  input:checked ~ label>nav {
+    font-size: 1.5rem;
+    display: block;
+    z-index: 1;
+    margin: -2rem 0 0 0;
+}
+label>span{
+display : none;
+}
+#check:checked ~ label>span{
+display: block;
+font-size:48px;
+line-height:48px;
+}
+#check:checked ~ label>svg{
+display: none;
+}
+#check{
+display : none;
+}
+nav{
+display: block;
+position:absolute;
+background-color: grey;
+width: 100%;
+left: 0px;
+top: 100px;
+text-align: right;
+max-width: 100%;
+}
+nav > ul{
+padding: 1rem;
+}
+nav > ul > li > a{
+    color: #fff;
+    text-decoration: none;
+    }
+nav{
+background-color: grey;
+}
+.nav-logo, svg{
+    padding: 1rem;
+}
+/*nav{
+    margin: 1rem 5rem;
+}
+.nav-logo{
+    margin: 0 5rem;
+}
+.nav-link{
+    text-decoration: none;
+}
+@media screen and (max-width: 1000px) {
+    .nav-link{
+        text-decoration: none;
+        display: none;
+    }
+    .nav-logo{
+        margin: 0 1rem;
+    }
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-sublist_display{
+    display: none;
+}
+.nav-work{
+    margin: 2rem 0;
+}
+.nav-work > a {
+    margin: 0 0.5rem;
+}
+
+/*----section hero----*/
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(images/city.jpg);
+    height: 50%;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-text {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    padding-top: 12rem;
+    color: white;
+}
+@media screen and (max-width: 375px) {
+    .hero-text > h1{
+        font-size: 1.5rem;
+    }
+}
+/*----section about----*/
+@media screen and (min-width: 900px) {
+    .box, .services-panels, .somefunfacts-panels{
+        display: flex;
+    }
+    [class*= "panels"]{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .services-panels, .somefunfacts-panels{
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .services-panels{
+        margin: 5rem;
+    }
+    .box-one, .box-two, .box-tree{
+        flex: 1;
+    }
+    .box-four{
+        flex: 2;
+        margin-right: 1rem;
+    }
+    .box-five{
+        flex: 1;
+    }
+    .column_container{
+        margin: 5rem 1rem;
+    }
+    .about-card{
+        padding: 0 2rem 10px 2rem;
+    }
+    .hr{
+        margin: 0 2rem 0 2rem;
+    }
+    hr{
+        margin: 2rem 0 2rem 0;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    
+    .gutter{
+        margin: 5rem 15rem;
+    }
+}
+
+.about-progress{
+    padding-top: 2rem;
+}
+
+.about-card_heading, .about-card_text{
+    padding: 0 0 10px 0;
+}
+
+/*----section blog----*/
+.blog{
+    column-count: 3;
+    
+    column-gap: 1rem;
+}
+@media screen and (max-width: 1300px) {
+    
+    .blog{
+        column-count: 2;
+    }
+}
+@media screen and (max-width: 500px) {
+    
+    .blog{
+        column-count: 1;
+    }
+}
+.blog-card{
+    display: inline-block;
+    column-width: 34rem;
+}
+blockquote{
+    quotes: none;
+    background-color: black;
+    color: white;
+    padding: 5rem 1rem 5rem 1rem;
+}
+/*----section team----*/
+
+.card-team{
+    padding: 0 0 1rem 0;
+}
+        .card-team_img{
+            max-width: 100%;
+        }
+            .card-team_name, .card-team_job{
+                padding: 2rem 0 0 0;
+            }
+                .card-team_text{
+                    max-width: 350px;
+                    padding: 2rem;
+                }
+
+
+/*----section quote----*/
+
+.quote{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(images/city.jpg);
+    color: var(--colorWhite);
+}
+
+/*----section our work----*/
+.grid > img{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #ffeead;
+}
+.grid > div > img {
+    width: 100%;
+    height: 100%;
+}
+
+.grid{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+    grid-auto-rows: 100px;
+    grid-auto-flow: dense; /* Fill all spaces with fitted images */
+}
+.one{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.two{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.tree{
+    grid-column: span 4;
+    grid-row: span 4;
+}
+
+.four {
+    grid-column: span 2;
+	grid-row: span 4;
+}
+.five{
+    grid-column: span 4;
+    grid-row: span 4;
+}
+.six{
+    grid-column: span 4;
+    grid-row: span 2;
+}
+.seven{
+    grid-column: span 4;
+    grid-row: span 2;
+}
+.height{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.nine{
+    grid-column: span 4;
+    grid-row: span 2;
+}
+.ten{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+@media screen and (max-width: 500px) {
+    .grid{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .grid > img{
+        width: 100%;
+    }
+
+    
+}
+
+/*
+.grid{
+    display: grid;
+    grid-template: repeat(3, 12.5rem) / repeat(7, 1fr);
+    gap: .5rem;
+}
+.tree{
+    grid-area: 1 / 3 / 3 / 5;
+}
+.four{
+    grid-area: 1 / 5 / 3 / 6;
+}
+.five{
+    grid-area: 1 / 6 / 3 / 8;
+}
+.six{
+    grid-area: 2 / 1 / 4 / 3;
+}
+.seven{
+    grid-area: 3 / 1 / 3 / 3;
+}
+.nine{
+    grid-area: 3 / 4 / 3 / 6 ;
+}
+
+*/
+/*----section somefunfacts----*/
+
+#somefunfacts{
+    padding: 5vh 0 5vh 0;
+}
+        .somefunfacts-blocks{
+            margin: 5rem;
+        }
+            .somefunfacts-number-size{
+                font-size: 2rem;
+                margin: 2rem;
+                font-family: "Open sans bold", sans-serif;
+            }
+            .somefunfacts-text-size{
+                font-size: 1rem;
+            }
+/*----section services----*/
+
+@media screen and (max-width: 500px) {
+    
+    #services{
+        padding: 1rem;
+    }
+}
+.services-card{
+    border: 1px solid var(--colorBtn);
+    padding: 5rem;
+    margin: 1rem 0 1rem 0;
+}
+.services-card:hover{
+    transition: 0.4s;
+    border: 1px solid var(--colorOrange);
+    background-color: var(--colorOrange);
+}
+/*----section twitter feed----*/
+
+.layout-padding{
+    padding: 7rem;
+}
+
+@media screen and (max-width: 500px) {
+    
+    .layout-padding{
+        padding: 7rem 1rem 7rem 1rem;
+    }
+}
+/*----section partners----*/
+
+.partners-panels > img{
+    margin: 0 2rem 0 2rem;
+}
+/*----section contact----*/
+input, textarea{
+    background: transparent;
+    border: 0.1rem solid var(--colorWhite);
+    margin: 0 0 1rem 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding: 0.5rem 0 0.5rem 1rem;
+    width: 45%;
+}
+
+input::placeholder, textarea::placeholder{
+    color: var(--colorWhite);
+}
+textarea{
+    background: transparent;
+    border: 0.1rem solid var(--colorWhite);
+    margin: 0 0 1rem 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding: 0.5rem 0 0.5rem 1rem;
+    width: 93.9%;
+    padding-bottom: 2rem;
+}
+textarea::placeholder{
+    padding: 0.5rem 0 0 0;
+}
+.contact-list_style{
+    list-style: none;
+    text-align: left;
+    color: var(--colorWhite);
+}
+.contact-list_style{
+    margin: 1rem;
+}
+.contact-button{
+    text-align: right;
+    width: 90%;
+}
+@media screen and (max-width: 500px) {
+    input, textarea{
+        width: 90%;
+        display: block;
+    }
+    
+}
+
+/*------------------------------------*\
+  #Heading
+\*------------------------------------*/
+
+h1, h2, h3, h4, h5, h6{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+}
+
+h2, h3, h4, h5, h6{
+    padding: 2.5rem;
+}
+.line{
+    display: inline-flex;
+}
+.line > div{
+    margin: 1rem;
+}
+.align{
+    text-align: center;
+}
+.right{
+    text-align: right;
+}
+h1 > span{
+    font-size: 1rem;
+}
+h2{
+    font-size: 2.5rem;
+    color: var(--colorH2);
+    font-weight: 300;
+}
+h3{
+    font-size: 1.5rem;
+    color: var(--colorH2);
+    font-weight: bold;
+}
+h4{
+    font-size: 1rem;
+}
+
+p{
+    color: var(--colorH2);
+    line-height: 1.5rem;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+
+.small_text-color, .icon-social_color{
+    color: var(--colorOrange);
+}
+
+
+/* divider*/
+
+h2::after{
+    content : "  ";
+    display: block;
+    width : 100px;
+    height: 2px;
+    margin: auto;
+    margin : auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;    
+}
+
+
+
+
+
+/* Background */
+
+.partners, .heading-divider_color::after{
+    background-color: var(--colorOrange);
+}
+.contact{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/desk.jpg);
+}
+#social{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/dock.jpg);
+}
+.quote{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(images/city.jpg);
+}
+#services{
+    background-image: linear-gradient(rgba(245, 239, 239, 0.363), rgba(245, 240, 240, 0.479)),  url(images/city-view-up.jpg);
+}
+
+
+/*------------------------------------*\
+  #Button
+\*------------------------------------*/
+
+.contact-button_style{
+    background-color: var(--colorBtn);;
+    border: 0.5rem solid var(--colorBtn);;
+    padding: 0.5rem 0.5rem;
+    color: var(--colorWhite);
+    text-transform: uppercase;
+}
+.contact-button_style:hover{
+    background-color: var(--colorOrange);;
+    border: 0.5rem solid var(--colorOrange);;
+    padding: 0.5rem 0.5rem;
+    color: var(--colorWhite);
+    text-transform: uppercase;
+}
+
+/*------------------------------------*\
+  #Progress bar
+\*------------------------------------*/
+
+
+progress[value] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+progress {
+    width: 100%;
+    height: 0.625rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+}
+.about-progress_text{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+.about-progess_color,[value]::-webkit-progress-bar {
+    background-color: #EFEFEF;    
+}
+.about-progess_color,[value]::-webkit-progress-value {
+    background-color: var(--colorOrange);
+}
+
+
+
+
+
+
+
+
+
+
+
+
